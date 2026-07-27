@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: "Geist", sans-serif;
+}
+
+@utility button-class {
+  @apply capitalize bg-blue-500 px-4 py-3 rounded-lg text-white hover:bg-blue-600 duration-300 cursor-pointer font-medium;
 }

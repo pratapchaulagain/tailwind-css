@@ -10,41 +10,64 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="bg-neutral-50 shadow-sm sticky top-0">
+  <body class="bg-white dark:bg-neutral-950">
+    <header class="bg-neutral-50 dark:bg-neutral-950 shadow-sm sticky top-0">
       <nav
         class="flex items-center justify-between max-w-7xl mx-auto px-4 py-4"
       >
         <div class="logo text-[20px] font-semibold text-blue-500">
           Pratap chaulagain
         </div>
-        <div class="flex items-center gap-10">
+        <div class="hidden sm:flex items-center gap-10">
           <a href="#" class="hover:text-blue-500 font-medium">Home</a>
           <a href="#" class="hover:text-blue-500 font-medium">Contact</a>
           <a href="#" class="hover:text-blue-500 font-medium">Address</a>
         </div>
-        <div class="icon"><i class="ri-moon-line"></i></div>
+
+        <div class="space-x-2">
+          <button id="theme-toggle" class="icon dark:text-white cursor-pointer">
+            <i class="ri-moon-line"></i>
+          </button>
+          <button class="icon sm:hidden  dark:text-white cursor-pointer">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 mt-8">
-      <section id="hero" class="flex items-center gap-8 flex-wrap w-full">
-        <div class="left h-300">
-          <h2 class="font-medium">Welcome to my portfolio</h2>
-          <h1 class="font-semibold text-3xl mt-4">Hi I'm Pratap Chaulagain</h1>
+      <section id="hero" class="flex items-center gap-8 w-full">
+        <div class="space-y-4 max-w-180">
+          <h2 class="font-medium dark:text-white">Welcome to my portfolio</h2>
+          <h1 class="font-semibold text-4xl dark:text-white">
+            Hi I'm Pratap Chaulagain
+          </h1>
 
-          <p class="mt-4">
+          <p class="dark:text-white">
             Passionate about crafting exceptional digital experiences through
             clean code and innovative solutions. Let's turn your ideas into
             reality.
           </p>
 
-          <div>
-            <button class="capitalize bg-blue-500 px-6 py-4 text- ">let's Connect</button>
+          <div class="space-x-3">
+            <button class="button-class">let's Connect</button>
+            <button
+              class="button-class bg-transparent text-black dark:text-white dark:hover:bg-neutral-300 border-2 border-neutral-700 hover:bg-neutral-700 hover:text-white dark:hover:text-black dark:hover:border-neutral-300"
+            >
+              Download CV
+            </button>
           </div>
         </div>
-        <div class="right bg-red-100 h-300"></div>
+        <div class="right">
+          <img
+            src="./profile.png"
+            alt=""
+            class="h-100 w-200 object-cover rounded-lg"
+          />
+        </div>
       </section>
     </main>
+
+    <script src="./src/script.js"></script>
   </body>
 </html>
