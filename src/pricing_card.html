@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+      <link href="./src/output.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- for eueal grid -->
+<!--   <div class=" grid gap-8 m-4 sm:grid-cols-2 grid-cols-2">
+        <div class="rounded bg-orange-500 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded bg-blue-500 shadow-2xl min-h-[100px]">2</div> -->
+  <!--   </div>
+    <div class=" grid gap-8 m-4 sm:grid-cols-3 ">
+        <div class="rounded bg-orange-500 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded bg-blue-500 shadow-2xl min-h-[100px]">2</div>
+         <div class="rounded bg-red-500 shadow-2xl min-h-[100px]">3</div>
+    </div> -->
+
+    <!-- for non-equal grid -->
+       <div class=" grid gap-8 m-4 sm:grid-cols-12 ">
+        <div class="rounded bg-orange-500 shadow-2xl min-h-[100px] sm:col-span-5 hidden sm:block">1</div> <!-- hidden for both screen=hidden, hidden for big screen=sm:hidden,for small=hidden sm:block --> 
+        <div class="rounded bg-blue-500 shadow-2xl min-h-[100px] sm:col-span-4">2</div>
+           <div class="rounded bg-red-500 shadow-2xl min-h-[100px] sm:col-span-3">3</div> 
+    </div> 
+
+
+</body>
+</html>
